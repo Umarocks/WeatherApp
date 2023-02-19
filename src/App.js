@@ -45,21 +45,18 @@ function App() {
             </div>
           </div>
           
-          <div className="middle">
+             <div className="middle">
+            <div className="mintemp">
+              <p className="bold">{data.main ? <p>{data.main.temp_max}</p> : null }</p>
+              <p>Max Temp</p>
+            </div>
             <div className="maxtemp">
 
-              <h2>Min Temp</h2>             
               <p className="bold">{data.main ? <p>{data.main.temp_min}</p> : null }</p>
+              <p>Min Temp</p>             
              
             </div>
             
-            <div className="mintemp">
-              <h2>Max Temp</h2>
-              <p className="bold">{data.main ? <p>{data.main.temp_max}</p> : null }</p>
-            </div>
-          </div>
-
-          <div className="bottom">
             <div className="feels">
               <p className='bold'>{data.main ? <p>{data.main.feels_like} °C</p> : null }</p>
               <p>Feels Like</p>
@@ -68,10 +65,11 @@ function App() {
               <p className='bold'>{data.main ? <p>{data.main.humidity}% </p> : null}</p>
               <p>Humidity</p>
             </div>
-            <div className="wind">
-              <p className='bold'>{data.wind ? <p>{data.wind.speed} MPH</p> : null}</p>
-              <p>Wind Speed</p>
-            </div>
+            
+          </div>
+
+          <div className="bottom">
+            
           </div>
 
         </div>
