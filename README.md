@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can see the live demo here [DEMO](https://umarocks.github.io/WeatherApp/).
+
 ## Available Scripts
 
 In the project directory, you can run:
